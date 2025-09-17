@@ -1,6 +1,6 @@
 Package: CMORplots
 Title: CMOR Standard Themes and Colour Palettes for `ggplot`
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person("Ross", "Wilson", , "ross.wilson@otago.ac.nz", role = c("aut", "cre"))
 Description: This package provides `ggplot` themes and colour schemes for
