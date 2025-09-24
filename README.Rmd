@@ -20,20 +20,20 @@ knitr::opts_chunk$set(
 
 # Overview
 
-The goal of CMORplots is to provides `ggplot` themes and colour schemes for consistent figure formatting for CMOR outputs.
+The goal of **`plottools`** is to provide `ggplot2` themes and colour schemes for consistent figure formatting for CMOR outputs, and to provide additional geoms for use in constructing plots.
 
 ## Installation
 
 You can install the latest version of CMORplots from [GitHub](https://github.com/):
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("uo-cmor/CMORplots")
+# install.packages("pak")
+pak::pak("uo-cmor/CMORplots")
 ```
 
 ## Example
 
-CMORplots provides functions to extend [ggplot2](https://github.com/tidyverse/ggplot2) with a selection of colour palettes and plot themes to provide a consistent style for CMOR outputs.
+**`plottools`** provides functions to extend [ggplot2](https://github.com/tidyverse/ggplot2) with a selection of colour palettes and plot themes to provide a consistent style for CMOR outputs.
 
 ### Colour palettes
 

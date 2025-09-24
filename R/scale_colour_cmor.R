@@ -39,19 +39,31 @@ NULL
 #' @export
 scale_colour_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
                               aesthetics = "colour") {
-  ggplot2::discrete_scale(aesthetics, "cmor", cmor_pal(palette, direction, grey), ...)
+  ggplot2::discrete_scale(
+    aesthetics,
+    palette = cmor_pal(palette, direction, grey),
+    ...
+  )
 }
 
 #' @rdname scale_colour_cmor
 #' @export
 scale_color_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
                              aesthetics = "colour") {
-  ggplot2::discrete_scale(aesthetics, "cmor", cmor_pal(palette, direction, grey), ...)
+  ggplot2::discrete_scale(
+    aesthetics,
+    palette = cmor_pal(palette, direction, grey),
+    ...
+  )
 }
 
 #' @rdname scale_colour_cmor
 #' @export
 scale_fill_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
                             aesthetics = "fill") {
-  ggplot2::discrete_scale(aesthetics, "cmor", cmor_pal(palette, direction, grey), ...)
+  ggplot2::discrete_scale(
+    aesthetics,
+    palette = cmor_pal(palette, direction, grey),
+    ...
+  )
 }

@@ -1,4 +1,4 @@
 library(testthat)
-library(CMORplots)
+library(plottools)
 
-test_check("CMORplots")
+test_check("plottools")
