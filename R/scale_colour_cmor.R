@@ -20,14 +20,10 @@
 #'
 #' @param ... Passed on to \code{\link[ggplot2]{discrete_scale}} to control
 #'     name, limits, breaks, etc.
-#' @param palette If a string, will use that named palette; if a number, will
-#'     index into the list of available palettes.
 #' @param direction Sets the order of colours in the scale (1 for standard, -1
 #'     for reversed).
-#' @param grey If \code{TRUE}, a grey/black colour will always be used as the
-#'     last group colour (regardless of the number of groups in the data). If
-#'     \code{FALSE} (the default), the colours and their order is as in the
-#'     original source palette.
+#' @param grey If \code{TRUE}, grey will always be used as the last group colour
+#'     (regardless of the number of groups in the data).
 #' @param aesthetics Which aesthetic(s) should the scale work with. This can be
 #'     useful, for example, to apply the same settings to both the
 #'     \code{colour} and \code{fill} aesthetics simultaneously.
@@ -37,33 +33,30 @@ NULL
 
 #' @rdname scale_colour_cmor
 #' @export
-scale_colour_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
-                              aesthetics = "colour") {
+scale_colour_cmor <- function(..., direction = 1, grey = FALSE, aesthetics = "colour") {
   ggplot2::discrete_scale(
     aesthetics,
-    palette = cmor_pal(palette, direction, grey),
+    palette = cmor_pal(direction, grey),
     ...
   )
 }
 
 #' @rdname scale_colour_cmor
 #' @export
-scale_color_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
-                             aesthetics = "colour") {
+scale_color_cmor <- function(..., direction = 1, grey = FALSE, aesthetics = "colour") {
   ggplot2::discrete_scale(
     aesthetics,
-    palette = cmor_pal(palette, direction, grey),
+    palette = cmor_pal(direction, grey),
     ...
   )
 }
 
 #' @rdname scale_colour_cmor
 #' @export
-scale_fill_cmor <- function(..., palette = 1, direction = 1, grey = FALSE,
-                            aesthetics = "fill") {
+scale_fill_cmor <- function(..., direction = 1, grey = FALSE, aesthetics = "fill") {
   ggplot2::discrete_scale(
     aesthetics,
-    palette = cmor_pal(palette, direction, grey),
+    palette = cmor_pal(direction, grey),
     ...
   )
 }
