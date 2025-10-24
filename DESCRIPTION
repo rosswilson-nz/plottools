@@ -9,11 +9,13 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 URL: https://github.com/rosswilson-nz/plottools
 BugReports: https://github.com/rosswilson-nz/plottools/issues
+Depends: R (>= 4.1.0)
 Imports: 
     ggplot2,
+    qualpalr,
     rlang
 Suggests: 
     testthat (>= 3.0.0)

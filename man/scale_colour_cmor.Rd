@@ -6,44 +6,21 @@
 \alias{scale_fill_cmor}
 \title{CMOR standard colour scales}
 \usage{
-scale_colour_cmor(
-  ...,
-  palette = 1,
-  direction = 1,
-  grey = FALSE,
-  aesthetics = "colour"
-)
+scale_colour_cmor(..., direction = 1, grey = FALSE, aesthetics = "colour")
 
-scale_color_cmor(
-  ...,
-  palette = 1,
-  direction = 1,
-  grey = FALSE,
-  aesthetics = "colour"
-)
+scale_color_cmor(..., direction = 1, grey = FALSE, aesthetics = "colour")
 
-scale_fill_cmor(
-  ...,
-  palette = 1,
-  direction = 1,
-  grey = FALSE,
-  aesthetics = "fill"
-)
+scale_fill_cmor(..., direction = 1, grey = FALSE, aesthetics = "fill")
 }
 \arguments{
 \item{...}{Passed on to \code{\link[ggplot2]{discrete_scale}} to control
 name, limits, breaks, etc.}
 
-\item{palette}{If a string, will use that named palette; if a number, will
-index into the list of available palettes.}
-
 \item{direction}{Sets the order of colours in the scale (1 for standard, -1
 for reversed).}
 
-\item{grey}{If \code{TRUE}, a grey/black colour will always be used as the
-last group colour (regardless of the number of groups in the data). If
-\code{FALSE} (the default), the colours and their order is as in the
-original source palette.}
+\item{grey}{If \code{TRUE}, grey will always be used as the last group colour
+(regardless of the number of groups in the data).}
 
 \item{aesthetics}{Which aesthetic(s) should the scale work with. This can be
 useful, for example, to apply the same settings to both the
